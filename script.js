@@ -197,9 +197,9 @@ function searchFood() {
         const name = card.querySelector('h2').textContent.toLowerCase();
 
         if (name.includes(searchTerm)) {
-            card.style.display = 'block'; // Показує карточку, якщо назва відповідає пошуковому терміну
+            card.style.display = 'block'; 
         } else {
-            card.style.display = 'none'; // Ховає карточку, якщо назва не відповідає пошуковому терміну
+            card.style.display = 'none'; 
         }
     });
 }
@@ -211,116 +211,16 @@ function filterByMealType() {
         const category = card.querySelector('p').textContent.toLowerCase();
 
         if (selectedMealType === 'all' || category.includes(selectedMealType)) {
-            card.style.display = 'block'; // Показує карточку, якщо вибрано "Всі" або категорія відповідає вибраному прийому їжі
+            card.style.display = 'block'; 
         } else {
-            card.style.display = 'none'; // Ховає карточку, якщо категорія не відповідає вибраному прийому їжі
+            card.style.display = 'none'; 
         }
     });
 }
 
 
-
-
 // script.js
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Отримати ідентифікатор блюда з параметрів URL
-//     const urlParams = new URLSearchParams(window.location.search);
-//     const foodId = urlParams.get('id');
-
-//     // Приклад масиву з інформацією про блюда (ваші дані)
-//     const foodData = [
-//         {
-//             "id": 1,
-//             "name": "Салат Цезар",
-//             "image": "assets/ceasar_salad.jpg",
-//             "description": "Смачний салат з куркою, листям салату, грінками і соусом Цезар.",
-//             "category": "Обід",
-//             "buttonText": "Детальніше",
-//             "recipe": {
-//                 "ingredients": [
-//                     "200 г курячого філе",
-//                     "100 г листя салату",
-//                     "50 г грінок",
-//                     "50 г сиру Пармезан",
-//                     "1/4 склянки гірчиці",
-//                     "1 яйце",
-//                     "Сіль і перець за смаком"
-//                 ],
-//                 "cookingMethod": [
-//                     "1. Приготуйте куряче філе і наріжте його на невеликі кубики.",
-//                     "2. Розтертій у чашці яєць додайте гірчицю, сіль і перець. Збити веничком.",
-//                     "3. Змішайте куряче філе, листя салату, грінки і сир Пармезан у великій мисці.",
-//                     "4. Додайте приготовану соусову суміш і добре перемішайте.",
-//                     "5. Подавайте охолодженим."
-//                 ],
-//                 "calories": 350
-//             }
-//         },
-//         // Додайте інші блюда за необхідності
-//     ];
-
-//     // Знайти блюдо за ідентифікатором
-//     const selectedFood = foodData.find(food => food.id == foodId);
-
-//     // Відобразити інформацію про блюдо на сторінці
-//     renderFoodDetails(selectedFood);
-// });
-
-// function renderFoodDetails(food) {
-//     const foodDetailsContainer = document.getElementById('food-details');
-
-//     const card = document.createElement('div');
-//     card.classList.add('food-card-details');
-
-//     const image = document.createElement('img');
-//     image.src = food.image;
-//     image.alt = food.name;
-
-//     const name = document.createElement('h2');
-//     name.textContent = food.name;
-
-//     const description = document.createElement('p');
-//     description.textContent = food.description;
-
-//     const category = document.createElement('p');
-//     category.textContent = "Category: " + food.category;
-
-//     const ingredientsHeading = document.createElement('h3');
-//     ingredientsHeading.textContent = "Ingredients:";
-
-//     const ingredientsList = document.createElement('ul');
-//     food.recipe.ingredients.forEach(ingredient => {
-//         const listItem = document.createElement('li');
-//         listItem.textContent = ingredient;
-//         ingredientsList.appendChild(listItem);
-//     });
-
-//     const cookingMethodHeading = document.createElement('h3');
-//     cookingMethodHeading.textContent = "Cooking Method:";
-
-//     const cookingMethodList = document.createElement('ol');
-//     food.recipe.cookingMethod.forEach(step => {
-//         const listItem = document.createElement('li');
-//         listItem.textContent = step;
-//         cookingMethodList.appendChild(listItem);
-//     });
-
-//     const calories = document.createElement('p');
-//     calories.textContent = "Calories: " + food.recipe.calories + " kcal";
-
-//     card.appendChild(name);
-//     card.appendChild(image);
-//     card.appendChild(description);
-//     card.appendChild(category);
-//     card.appendChild(ingredientsHeading);
-//     card.appendChild(ingredientsList);
-//     card.appendChild(cookingMethodHeading);
-//     card.appendChild(cookingMethodList);
-//     card.appendChild(calories);
-
-//     foodDetailsContainer.appendChild(card);
-// }
 
 
 
