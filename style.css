@@ -1,0 +1,381 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	
+	
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
+
+
+.bigred{
+	font-size: 20px;
+	color: red;
+} 
+
+header{
+	position:fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	background-color:#FFBB5C;
+	display: flex ;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0% 9%;
+
+}
+header .logo{
+	font-size: 30px;
+	font-weight: 900;
+	color:#F4f4f4;
+	
+}
+header .logo:hover{
+	transform:scale(1.2)
+	
+}
+header nav ul li{
+	position: relative;
+	float:left;
+	
+}
+
+header nav ul li a{
+	padding: 20px;
+	color:black;
+	font-size: 20px;
+	display:block; 
+	
+}
+header nav ul li a:hover{
+	background: #FF9B50;
+	color:#fff;
+
+}
+.hero-section {
+    position: relative;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/fon.jpg');
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.6; 
+    z-index: -1; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; 
+    padding: 100px 20px; 
+}
+.hero-content h1 {
+    font-size: 36px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+.hero-content p {
+    font-size: 18px; 
+    line-height: 1.5; 
+}
+
+/* Тінь для тексту */
+.hero-content {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+body{
+    margin-top: 60px;
+}
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.about-section, .featured-recipes {
+    margin-bottom: 40px;
+}
+
+.about-section h2, .featured-recipes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.subscription-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.subscription-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.subscription-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.subscription-plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.subscription-plan {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.subscription-plan:hover {
+    transform: scale(1.05);
+}
+
+.subscription-plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subscription-plan p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.subscription-plan button {
+    background-color: #FF9B50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.subscription-plan button:hover {
+    background-color: #FF7F00;
+}
+
+
+/* Стилізуйте блоки рекомендованих рецептів за потребою */
+
+.footer {
+    background-color:#FFE382; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0; 
+    margin-top:100px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 10px;
+    background-size: cover;
+}
+
+.instagram {
+    background-image: url('assets/insta.png');
+}
+
+.telegram {
+    background-image: url('assets/telegram.png');
+}
+
+.footer p {
+    font-size: 18px; 
+   
+}
+/*О нас*/
+.about-us {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #d26d0e; 
+    font-family: 'Pacifico', cursive; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.about-us img.team-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/*Картчоки*/
+
+.food-card {
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    overflow: hidden;
+    margin: 10px; 
+    width: 200px; 
+    height: 300px;
+    display: flex; 
+    flex-direction: column;
+    text-align: center; 
+}
+
+.food-card img {
+    max-width: 100%; 
+    /* border-bottom: 1px solid #ddd; */
+	height: 105px;
+	/* margin: 0 auto; */
+	padding:  0px 10px; 
+}
+
+.food-card h2 {
+    font-size: 1.2em; 
+    margin: 10px 0; 
+}
+
+.food-card p {
+    font-size: 1em;
+    flex-grow: 1; 
+    padding: 0 10px; 
+    margin: 0;
+    height: 53px;
+}
+
+
+
+
+.food-card button {
+    background-color: #FF9B50; 
+    color: #fff; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    width: 100%;
+}
+
+
+
+.food-card button:hover {
+    background-color: #FF7F00;
+}
+
+
+.wow {
+    margin-top: 180px; 
+}
+
+.food-cards {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-container label {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.search-container input {
+    margin-right: 5px;
+    margin-bottom: 90px;
+    padding: 8px; 
+    font-size: 16px;
+}
+
+.search-container button {
+    background-color: #FF9B50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #FF7F00;
+}
